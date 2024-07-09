@@ -214,6 +214,16 @@ opacity: 6.7;
 background-color: black;
 color: white;
 }
+
+.projects{
+background-image: url("https://th.bing.com/th/id/OIP.uc2DZEebUbuA5sgzMued2QHaFj?pid=ImgDet&w=185&h=138&c=7");
+background-repeat: no-repeat;
+background-size: cover;
+height: 500px;
+width: 100%;
+padding-left: 15.5em;
+padding-right: 15.5em;
+}
 @media screen and (max-width: 500px) {
 .main{
 width: 100%;
