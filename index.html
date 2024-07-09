@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="mystyle.css">
+    <title>My portfolio</title>
+    <style>
+        nav {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+nav a {
+    float: left;
+    display: block;
+    color:  whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+nav a:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+nav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+.main{
+    margin-top: 50px;
+}
+
+.bg_img{
+object-fit: cover;
+width: 100%;
+height: 400px;
+filter: blur(4px);
+margin-top: 1px;
+}
+.profile_pic{
+object-fit: cover;
+height: 150px;
+width: 150px;
+border-style: solid;
+border-color: white;
+border-width: thick;
+border-radius: 100%;
+position: absolute;
+margin-top: -4.5rem;
+}
+.text-block{
+position: absolute;
+margin-top: -13.5rem;
+text-align: center;
+margin-left: 600px;
+font-weight: bold;
+}
+.fa {
+padding: 20px;
+font-size: 30px;
+width: 30px;
+text-align: right;
+text-decoration: none;
+border-radius: 50%;
+}
+
+
+/* Add a hover effect if you want */
+.fa:hover {
+opacity: 0.7;
+}
+
+.main1{
+margin-left: 15.5em;
+margin-right: 15.5em;
+}
+h1{
+font-size: 2.2rem;
+text-align: left;
+font-weight: bold;
+font-family: 'Courier New', Courier, monospace;
+margin-top: 40px;
+}
+hr{
+border: 2px solid rgb(0,0,0);
+width: 50px;
+}
+.education{
+display: flex;
+flex-direction: row;
+margin-top: 40px;
+align-items: center;
+justify-content: space-evenly;
+}
+.schl-name,.year{
+font-weight: bold;
+font-size: 1.0em;
+}
+.skills{
+background-image: url("https://th.bing.com/th/id/OIP.ZHS1e5s0aB3aQFxTv_2oCwHaE7?w=253&h=180&c=7&r=0&o=5&pid=1.7");
+background-repeat: no-repeat;
+background-size: cover;
+height: 500px;
+width: 100%;
+padding-left: 15.5em;
+padding-right: 15.5em;
+}
+table,th,td{
+border: 2px solid black;
+float: center;
+}
+table{
+margin-top: 3.0rem;
+}
+th,td{
+padding: 50px 50px 15px 15px;
+}
+table.skill_name{
+margin-left: 9.5px;
+margin-right: 9.5px;
+
+}
+.td1{
+background-color: white;
+font-family: Cambria;
+color: black;
+text-align: center;
+font-weight: bold;
+}
+.td2{
+background-color: lightblue;
+font-family: Cambria;
+color: black;
+text-align: center;
+font-weight: bold;
+}
+.skill-level1{
+color: red;
+font-size: 1.5rem;
+font-weight: bold;
+}
+.skill-level2{
+color: red;
+font-size: 1.5rem;
+font-weight: bold;
+}
+.contact1{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+.personal_details{
+background-color: darkblue;
+color: white;
+width: 800px;
+height: 500px;
+padding-left: 15.5em;
+}
+.contact{
+background-color: lightgray;
+color: black;
+width: 800px;
+padding-left: 50px;
+padding-right: 15.5em;
+}
+input{
+width: 400px;
+}
+span,label{
+font-weight: bold;
+font-size: 1.1rem;
+font-family: Gill Sans;
+}
+.button:hover{
+opacity: 6.7;
+background-color: #04AA6D;
+}
+.button{
+font-size: 1.5rem;
+font-weight: bold;
+padding: 1px 1px;
+height: 60px;
+width: 150px;
+text-align: center;
+margin-left: 80px;
+background-color: rgb(176, 253, 176);
+color: black;
+border: 3px solid black;
+border-radius: 10px;
+}
+fieldset{
+border: 2px solid black;
+width: 300px;
+padding-top: 10px;
+padding-bottom: 1px;
+text-align: center;
+font-weight: bold;
+}
+.copyright{
+font-style: italic;
+font-family: sans-serif;
+text-align: center;
+}
+.footer{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+.download:hover{
+opacity: 6.7;
+background-color: black;
+color: white;
+}
+@media screen and (max-width: 500px) {
+.main{
+width: 100%;
+}
+.bg_img {
+max-width: 100%;
+}
+body{
+margin: 0;
+}
+.skills{
+max-width: 100%;
+}
+
+
+}
+    </style>
+        
+
+    
+</head>
+<body>
+        <div class="navigation">
+            <nav>
+                <a class="active" href="#home">Home</a>
+                <a href="#profile">Profile</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+              </nav>
+        </div>
+    <div class="main">
+        <div class="homepage" id="home" >
+            <img class="bg_img" src="https://th.bing.com/th/id/R.0215a4e5fca30e99e260e23d58b7636b?rik=xE416sBXrzTEJg&riu=http%3a%2f%2fgetwallpa
+            pers.com%2fwallpaper%2ffull%2f7%2f3%2f4%2f598269.jpg&ehk=rzrWUqROd4UvD9JebSQUN8WiEt1MlYf49U85%2bUZ95TE%3d&risl=&pid=ImgRaw&r=0">
+            <div class="text-block">
+                <h1 class="myName">Arnav Singh</h1>
+                <h4 class="designation">A Web Developer</h4>
+            </div>
+        </div>
+        <div class="my_profile" id="profile" align="center">
+            <img src="https://1.bp.blogspot.com/-fd52_fFtXcE/WOOcpQziCEI/AAAAAAAAFl0/G9-kQOGBD5syvWq744Rqzx7praTdmNnDgCK4B/s1600/Zayed%2BKhan%2Bprofile
+            %2Bfamily%252C%2Bwiki%2BAge%252C%2BAffairs%252C%2BBiodata%252C%2BHeight%252C%2BWeight%252C%2Bwife%252C%2BBiography%2Bgo%2Bprofile3.jpg"
+             class="profile_pic" alt="my profile pic">
+        </div>
+        <div class="main1">
+            <h1>EDUCATION</h1>
+            <hr>
+        </div>
+        <div class="education main1" id="profile">
+            
+            <div class="ed1">
+                <p class="schl-name">D.A.V Public School</p>
+                <p class="year">2020</p>
+                <p class="description">I have been completed my matriculate from D.A.V. Public School RunniSaidpu Sitamarhi , Bihar. I secured 
+                    95.8% in my 10th board exams.
+                </p>
+            </div>
+            <div class="ed2">
+                <p class="schl-name">K.V. No. 1 Binnaguri Cantt.</p>
+                <p class="year">2022</p>
+                <p class="description">I have been completed my intermediate from K.V. No.1 Binnaguri Cantt. with 94.6%.</p>
+            </div>
+            <div class="ed3">
+                <p class="schl-name">Banaras Hindu University</p>
+                <p class="year">2023-25</p>
+                <p class="description">I am currently pursuing my graduation in BSc Mathematics hons with physics and computer science as subsidiary 
+                    subjects . I am in second year with my first year cgpa as 9.26 .
+                </p>
+            </div>
+        </div>
+        
+        <div class="skills" id="skills">
+            <h1>SKILLS</h1>
+            <hr>
+            <table class="skill_name">
+                <tr class="skill">
+                    <td class="td1">
+                        <p class="skill-name1">HTML,CSS,HTML5,JavaScript</p>
+                        <p class="skill-level1">Proficient</p>
+                    </td>
+                    <td class="td2">
+                        <p class="skill_name1">Full Stack Development</p>
+                        <p class="skill-level2">Beginner</p>
+                    </td>
+                    <td class="td1">
+                        <p class="skill_name1">Web Designing and Development</p>
+                        <p class="skill-level1">Proficient</p>
+                    </td>
+                    <td class="td2">
+                        <p class="skill_name1">Mathematics</p>
+                        <p class="skill-level2">Proficient</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td2">
+                        <p class="skill_name1">Teaching</p>
+                        <p class="skill-level1">Proficient</p>
+                    </td>
+                    <td class="td1">
+                        <p class="skill_name1">Communication</p>
+                        <p class="skill-level2">Proficient</p>
+                    </td>
+                    <td class="td2">
+                        <p class="skill_name1">C,C++,Python,JAVA</p>
+                        <p class="skill-level1">Proficient</p>
+                    </td>
+                    <td class="td1">
+                        <p class="skill_name1">Figma</p>
+                        <p class="skill-level2">Medium</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="contact1" id="contact">
+            <div class="personal_details" >
+                <h1>QUICK ID</h1>
+                <hr>
+                <br>
+                <br>
+                <p><span>Name:</span>&nbsp;&nbsp;Arnav Singh</p>
+                <p><span>Email:</span>&nbsp;&nbsp;arnavsingh12@gmail.com</p>
+                <p><span>Website:</span>&nbsp;&nbsp;<a href="https://saniya-raj.github.io/instagram_clone/" color="blue">https://saniya-raj.github.io/instagram_clone/</a></p>
+                <p><span>Address:</span>&nbsp;&nbsp;KDC Lanka Varanasi U.P</p>
+                <p><span>Language:</span>&nbsp;&nbsp;English, Hindi</p>
+            </div>
+            <div class="contact" >
+                <h1>CONTACT ME</h1>
+                <hr>
+                <form class="user_form" id="user_form">
+                    <label for="name">Name:</label><br>
+                    <input name="name" placeholder="Enter your name:" type="text" id="name"><br>
+                    <label for="email">Email:</label><br>
+                    <input name="email" placeholder="Enter your email(abc@gmail.com):" type="email" id="email"><br>
+                    <label for="subject">Subject:</label><br>
+                    <input name="subject" placeholder="Enter your Subject:" type="text" id="subject"><br>
+                    <label for="message">Message:</label><br>
+                    <input name="message" placeholder="Enter your message:" type="text" id="message"><br>
+                    <br>
+                    <br>
+                    <a href="https://testbook.com">
+                        <input type="submit" class="button" id="submit" value="Submit" onclick="submit()">
+                    </a>
+                </form>
+            </div>
+        </div>
+        <div class="footer main1">
+            <div class="social-links" id="contact">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+            <div>
+                <fieldset class="download">
+                    <p>DOWNLOAD THIS RESUME...</p>
+                </fieldset>
+            </div>
+        </div>
+        <p class="copyright">@2023 All rights reserved ... The data given above are all true to the best of my knowledge</p>
+</div>
+</body>
+</html>
