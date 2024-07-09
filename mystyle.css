@@ -224,6 +224,25 @@ width: 100%;
 padding-left: 15.5em;
 padding-right: 15.5em;
 }
+table.p_name{
+margin-left: 9.5px;
+margin-right: 9.5px;
+
+}
+.p1,.p2{
+background-color: white;
+font-family: Cambria;
+color: black;
+text-align: center;
+font-weight: bold;
+}
+.p3,.p4{
+background-color: lightblue;
+font-family: Cambria;
+color: black;
+text-align: center;
+font-weight: bold;
+}
 @media screen and (max-width: 500px) {
 .main{
 width: 100%;
